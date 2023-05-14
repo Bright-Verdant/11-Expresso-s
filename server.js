@@ -3,7 +3,8 @@ const path = require("path");
 const fs = require('fs');
 const { v4: uuid } = require('uuid');
 
-const PORT = 3002;
+const PORT = process.env.PORT || 3002;
+
 const app = express();
 
 
