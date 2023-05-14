@@ -170,6 +170,20 @@ const renderNoteList = async (notes) => {
   }
 };
 
+
+// const deleteNoteFromDatabase = async (id) => {
+//   try {
+//     await fetch(`/api/notes/${id}`, {
+//       method: 'DELETE',
+//     });
+    
+//     location.reload();
+//   } catch (err) {
+//     console.error(`Failed to delete note with ID ${id}:`, err);
+//   }
+// };
+
+
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
